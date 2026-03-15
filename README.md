@@ -1,4 +1,4 @@
-# dspipeline
+# dshandler
 
 A stateful, chainable data-science pipeline for the full tabular ML workflow —
 from raw data to model-ready arrays — in a single class.
@@ -6,7 +6,7 @@ from raw data to model-ready arrays — in a single class.
 ## Installation
 
 ```bash
-pip install dspipeline
+pip install dshandler
 ```
 
 ## Quick start
