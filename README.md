@@ -16,7 +16,7 @@ import pandas as pd
 from dspipeline import DataSciencePipeline
 
 df  = pd.read_csv("your_dataset.csv")
-dsp = DataSciencePipeline(df, target_col="Churn", task_type="classification")
+dsp = DataSciencePipeline(df, target_col="Churn", exclude_cols=["customer_id", "signup_date", "contract_text"], task_type="classification")
 
 # One-liner: diagnostics → cleaning → preprocessing
 dsp.run_diagnostics().run_cleaning().run_preprocessing()
